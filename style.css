@@ -1,0 +1,92 @@
+.StartStopButton {
+    grid-area: body;
+	box-shadow: 0px 0px 0px 13px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:20px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:30px;
+	font-style:italic;
+	padding:30px 30px;
+	text-decoration:none;
+	text-shadow:5px 7px 3px #283966;
+}
+.StartStopButton:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.StartStopButton:active {
+	position:relative;
+	top:1px;
+}
+.StartStopButton.layout {
+    width: 1366px;
+    height: 768px;
+  
+    display: grid;
+    grid:
+      "sidebar body" 1fr
+      / auto 1fr;
+    gap: 8px;
+}
+
+:root{
+	/*variables for all aspects of button color*/
+	--gradient-start-blue: #7892c2;
+	--gradient-end-blue: #476e9e;
+	--gradient-start-red: #c27878;
+	--gradient-end-red: #9e4747;
+	
+	--bg-color-blue: #7892c2;
+	--bg-color-red: #c27878;
+	
+	--border-color-blue: #4e6096;
+	--border-color-red: #964e4e;
+	
+	--shadow-color-blue: #9fb4f2;
+	--shadow-color-red: #f29f9f;
+	
+	--text-color: #ffffff;
+	--text-shadow-color-blue: #283966;
+	--text-shadow-color-red: #662828;
+}
+.ResetButton:hover {
+	background:linear-gradient(to bottom, #9e4747 5%, #c27878 100%);
+	background-color:#9e4747;
+}
+.ResetButton:active {
+	position:relative;
+	top:1px;
+}
+.ResetButton.layout {
+    width: 1366px;
+    height: 768px;
+  
+    display: grid;
+    grid:
+      "sidebar body" 1fr
+      / auto 1fr;
+    gap: 8px;
+}
+.ResetButton {
+	grid-area: body;
+	box-shadow: 0px 0px 0px 13px var(--shadow-color-blue);
+	background:linear-gradient(to bottom, var(--gradient-start-blue) 5%, var(--gradient-end-blue) 100%);
+	background-color: var(--bg-color-blue);
+	border-radius:20px;
+	border:1px solid var(--border-color-blue);
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:30px;
+	font-style:italic;
+	padding:30px 30px;
+	text-decoration:none;
+	text-shadow:5px 7px 3px var(--text-shadow-color-blue);
+}
+
